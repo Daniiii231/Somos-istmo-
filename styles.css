@@ -1,0 +1,245 @@
+/* Importar fuente minimalista (Montserrat) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Montserrat', sans-serif;  /* Fuente minimalista */
+    background-color: #F5F5F5;  /* Fondo suave y neutro */
+    color: #333;  /* Texto oscuro para buena legibilidad */
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #A65E3B;  /* Color que recuerda a la tierra y los tonos de la gastronomía de Juchitán */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;  /* Enlaces en blanco para contraste */
+    font-weight: 500;  /* Hacer los enlaces un poco más gruesos */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #F1C40F;  /* Color dorado que resalta al pasar el cursor */
+}
+
+/* Estilos para las imágenes circulares */
+.circle-img-master {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #ebc909;  /* Borde rojo intenso para el maestro */
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.circle-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para las secciones */
+.section-header {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.5rem;  /* Tamaño de fuente grande */
+    color: #A65E3B;  /* Color que representa la tierra */
+    font-weight: 700;  /* Negrita para destacar el título */
+    text-transform: uppercase;  /* Mayúsculas para un estilo más moderno */
+}
+
+/* Sección de Integrantes */
+#integrantes .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;  /* Espacio entre los miembros */
+}
+
+#integrantes .col-md-2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Fondo para la sección de Quiénes Somos */
+#quienes-somos {
+    background-color: #FFF1E6;  /* Fondo cálido y suave */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#quienes-somos p {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Sección de Comida Típica */
+.menu-item, .recipe-item {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.menu-item img, .recipe-item img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#menu, #recetas {
+    padding: 40px 0;
+}
+
+.menu-item h4, .recipe-item h4 {
+    color: #A65E3B;  /* Color que resalta los nombres de los platillos */
+    font-weight: 500;
+}
+
+/* Sección de Integrantes */
+#integrantes .row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Color de fondo para las secciones */
+#menu, #recetas {
+    background-color: #FFF;
+}
+
+.d-none {
+    display: none !important;
+}
+
+/* Fondo general para la página */
+body {
+    background-color: #F5F5F5;
+}
+
+/* Estilo para los botones de la navbar */
+.navbar-toggler-icon {
+    background-color: #F1C40F; /* Color dorado para la barra de menú hamburguesa */
+}
+
+.navbar-nav .nav-link {
+    padding: 12px 20px;
+}
+
+/* Color de los títulos dentro de la sección de Integrantes */
+h2 {
+    color: #A65E3B;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+/* Estilos generales de la barra de navegación */
+.navbar-brand img {
+    width: 150px;
+    height: auto;
+}
+/* Sección común de todas las secciones */
+.section-content {
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Mostrar las secciones activas */
+.section-content:not(.d-none) {
+    display: block;
+}
+/* Sección común de todas las secciones */
+.section-content {
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Mostrar las secciones activas */
+.section-content:not(.d-none) {
+    display: block;
+}
+
+/* Estilos para la introducción en el menú */
+.intro-text {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Estilos para los platillos del menú */
+.menu-item img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item h4 {
+    font-size: 1.5rem;
+    color: #A65E3B;
+}
+
+.menu-item p {
+    font-size: 1rem;
+    color: #555;
+}
+/* Estilo del título */
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Imagen circular del maestro */
+.circle-img-master {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 10px auto;
+    border: 3px solid #A65E3B; /* Color distintivo */
+    display: block;
+}
+
+/* Imagen circular de los integrantes */
+.circle-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px auto;
+    border: 2px solid #555; /* Color neutro */
+    display: block;
+}
+
+/* Separación entre las filas */
+.row.text-center {
+    margin-bottom: 20px;
+}
+
+/* Títulos de profesor e integrantes */
+h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin-bottom: 15px;
+}
+#comentarios .comentario {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+#comentarios .comentario h5 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#comentarios .comentario p {
+    margin-bottom: 5px;
+    font-size: 16px;
+}

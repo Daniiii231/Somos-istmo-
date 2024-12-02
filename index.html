@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comida Típica de Juchitán</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="cebetis.png" alt="Logo">
+                <p>SOMOS ISTMOS</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showSection('menu')">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showSection('recetas')">Recetas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showSection('quienes-somos')">Quiénes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showSection('agradecimientos')">Agradecimientos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de Comida Típica de Juchitán -->
+<section id="menu" class="section-content">
+    <div class="container">
+        <h2 class="section-header">Comida Típica de Juchitán</h2>
+        <p class="intro-text">
+            La gastronomía de Juchitán es un deleite cultural lleno de sabores únicos y tradiciones ancestrales. Aquí encontrarás una selección de platillos, bebidas y dulces que reflejan la esencia de esta región oaxaqueña.
+        </p>
+
+        <!-- Categoría: Platillos -->
+        <div class="col-md-4 menu-item">
+            <h3 class="category-header" onclick="toggleCategory('Platillos')">Bebidas</h3>
+            <img src="tlayuda.jpg" alt="Tlayuda" class="img-fluid">
+            <h4>Tlayuda</h4>
+            <p>La tlayuda es un icono gastronómico de Oaxaca y especialmente valorada en Juchitán. Es una tortilla de maíz de gran tamaño y textura crujiente, untada con frijoles refritos y cubierta con quesillo, carne asada (tasajo o cecina) y salsa. A menudo se acompaña con aguacate y verduras frescas. Su preparación sencilla y su combinación de sabores hacen de la tlayuda un platillo completo y delicioso, perfecto para disfrutar en cualquier ocasión.</p>
+        </div>
+        <div class="col-md-4 menu-item">
+            <img src="tamal.jpg" alt="Tamales" class="img-fluid">
+            <h4>Tamales</h4>
+            <p>Los tamales istmeños son una delicia tradicional de Juchitán, elaborados con masa de maíz suave y rellenos de guisos como mole, pollo, cerdo o frijoles. Se envuelven en hojas de plátano y se cuecen al vapor, lo que les da un aroma y sabor únicos. Son protagonistas en festividades y reuniones familiares, representando la calidez y tradición de la gastronomía zapoteca.</p>
+        </div>
+        <div class="col-md-4 menu-item">
+            <img src="mole.jpg" alt="Mole" class="img-fluid">
+            <h4>Mole</h4>
+            <p>El mole istmeño es un platillo emblemático de Juchitán, conocido por su riqueza de sabores y su profunda conexión con las tradiciones zapotecas. Preparado con una mezcla de chiles, especias, semillas y chocolate, su sabor es complejo y balanceado, ideal para acompañar guajolote, pollo o cerdo. Este mole es protagonista en celebraciones importantes, reflejando la cultura y el cariño de la comunidad en cada plato.</p>
+        </div>
+        <div class="col-md-4 menu-item">
+            <img src="garnachas.jpg" alt="Mole de Guajolote" class="img-fluid">
+            <h4>Garnachas</h4>
+            <p>Las garnachas son un platillo típico de Juchitán, Oaxaca, compuesto por pequeñas tortillas de maíz fritas, cubiertas con carne deshebrada (generalmente de res), cebolla encurtida, queso fresco y una deliciosa salsa roja. Este antojito es un clásico de la gastronomía istmeña, perfecto para compartir y disfrutar en mercados y festividades locales. Su combinación de sabores crujientes y especiados las convierte en una delicia irresistible.</p>
+        </div>
+    
+        <div class="col-md-4 menu-item">
+            <img src="empanadas.jpg" alt="Mole de Guajolote" class="img-fluid">
+            <h4>Empanadas</h4>
+            <p>Las empanadas juchitecas son una especialidad tradicional hecha con masa de maíz, rellena de guisos como mole amarillo, pollo deshebrado, queso o mariscos. Se cocinan en comales, lo que les da una textura suave y ligeramente tostada. A menudo se acompañan con salsa picante y son un alimento emblemático en reuniones familiares y festividades, destacando por su sabor auténtico y casero.</p>
+        </div>
+        <div class="col-md-4 menu-item">
+            <img src="pollo.jpg" alt="Mole de Guajolote" class="img-fluid">
+            <h4>Pollo garnachero</h4>
+            <p>El pollo garnachero es un platillo tradicional de Juchitán, caracterizado por su sabor jugoso y especiado. Consiste en piezas de pollo marinadas en una mezcla de especias y achiote, que luego se cocinan lentamente para resaltar su textura tierna. Se sirve acompañado de tortillas de maíz, salsa y cebolla encurtida, siendo una opción popular en reuniones familiares y mercados locales. Es un plato que combina simplicidad y autenticidad, representando los sabores únicos del Istmo.</p>
+        </div>
+    </div>
+</div>
+
+        <!-- Categoría: Bebidas -->
+        <div class="menu-category">
+            <h3 class="category-header" onclick="toggleCategory('bebidas')">Bebidas</h3>
+            <div id="bebidas" class="category-content">
+                <div class="row">
+                    <div class="col-md-4 menu-item">
+                        <img src="bupu.jpeg" alt="Tejate" class="img-fluid">
+                        <h4>Bupu</h4>
+                        <p>El bupu es una bebida tradicional de los pueblos zapotecos del Istmo de Tehuantepec, especialmente valorada en Juchitán. Su nombre significa "espuma" en zapoteco, y se caracteriza por una suave y aromática espuma obtenida al batir una mezcla de maíz, cacao y una flor silvestre llamada "rosita de cacao". Esta bebida es dulce, refrescante y se sirve en celebraciones importantes, representando un símbolo de hospitalidad y tradición cultural.</p>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <img src="atole.jpg" alt="Atole" class="img-fluid">
+                        <h4>Atole</h4>
+                        <p>El atole es una bebida tradicional mexicana hecha a base de maíz nixtamalizado, mezclado con agua o leche, y endulzada con azúcar o piloncillo. Se aromatiza con ingredientes como canela, vainilla o cacao, y a menudo se sirve caliente, siendo una opción reconfortante para las mañanas frescas o festividades. Su textura es espesa y cremosa, y existen variantes con sabores como chocolate, fresa o guayaba.</p>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <img src="champurrado.jpg" alt="Chocolate" class="img-fluid">
+                        <h4>Champurrado</h4>
+                        <p>El champurrado es una bebida tradicional mexicana, espesa y reconfortante, elaborada con masa de maíz, chocolate, agua o leche, y endulzada con piloncillo. Se sazona con canela para intensificar su sabor. Es una variante del atole que combina el maíz y el cacao, ambos ingredientes esenciales de la cultura mesoamericana. Perfecto para acompañar tamales, se disfruta especialmente en épocas festivas y mañanas frías</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categoría: Dulces -->
+        <div class="menu-category">
+            <h3 class="category-header" onclick="toggleCategory('dulces')">Dulces</h3>
+            <div id="dulces" class="category-content">
+                <div class="row">
+                    <div class="col-md-4 menu-item">
+                        <img src="gueta.jpg" alt="Guetabingui" class="img-fluid">
+                        <h4>Guetabingui</h4>
+                        <p>
+                           El guetabingui se elabora a base maíz, y se condimenta con semillas de calabaza, achiote, chiles, manteca de cerdo, sal, camarones o pescados, que después de ser mezclados se honean. 
+                            .</p>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <img src="dulcealmendra.jpg" alt="Dulce de almendra" class="img-fluid">
+                        <h4>Dulce de almendra</h4>
+                        <p> este dulce esta hecha a base de almendras cocidas en una miel hecha con agua, azúcar, canela y colorante vegetal
+                   </p>
+                    </div>
+                    <div class="col-md-4 menu-item">
+                        <img src="dulcecoco.jpg" alt="dulce de coco " class="img-fluid">
+                        <h4>Dulce coco </h4>
+                        <p>
+                   El dulce de coco es una delicia tradicional de Juchitán de Zaragoza, en el Istmo de Tehuantepec. Elaborado con pulpa de coco rallada, azúcar y a veces un toque de canela o vainilla, este dulce destaca por su textura suave y su sabor naturalmente tropical. Generalmente, se moldea en pequeñas porciones y se presenta en hojas de totomoxtle o envuelto en papel celofán, reflejando la herencia cultural de la región.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección de Recetas (oculta inicialmente) -->
+    <!-- Sección de Recetas -->
+<section id="recetas" class="section-content d-none">
+    <div class="container">
+        <h2 class="section-header">Recetas</h2>
+        <div class="row">
+            <!-- Receta de Tlayuda -->
+            <div class="col-md-4 recipe-item" onclick="showRecipe('tlayuda')">
+                <img src="tlayuda.JPG" alt="Receta de Tlayuda" class="img-fluid">
+                <h4>Tlayuda</h4>
+            </div>
+            <!-- Receta de Tamales -->
+            <div class="col-md-4 recipe-item" onclick="showRecipe('tamales')">
+                <img src="tamal.jpg" alt="Receta de Tamales" class="img-fluid">
+                <h4>Tamales</h4>
+            </div>
+            <!-- Receta de Mole -->
+            <div class="col-md-4 recipe-item" onclick="showRecipe('mole')">
+                <img src="mole.jpg" alt="Receta de Mole" class="img-fluid">
+                <h4>Mole</h4>
+            </div>
+        </div>
+        <!-- Contenedor de la receta -->
+        <div id="recipe-details" class="mt-4 d-none">
+            <h3 id="recipe-title"></h3>
+            <p id="recipe-description"></p>
+            <button class="btn btn-primary mt-3" onclick="hideRecipe()">Cerrar</button>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Sección de Quiénes Somos -->
+<section id="quienes-somos" class="section-content d-none">
+    <div class="container">
+        <h2 class="section-header">Quiénes Somos</h2>
+        <p>
+            Somos un grupo de estudiantes del CBETIS 205, comprometidos con la difusión de la cultura y gastronomía de Juchitán, Oaxaca. 
+            Nuestro objetivo es resaltar las tradiciones culinarias de nuestra región y compartirlas con el mundo, 
+            mostrando el orgullo que sentimos por nuestras raíces zapotecas.
+            
+        </p>
+        <p> Pertenecemos al Centro de bachillerato tecnologico insdustrial y de servicios num. 205 Somos alunmos del 3 semestre grupo L de la especialidad bt en programación</p>
+
+        <!-- Sección del Profesor -->
+        <div class="row text-center mb-5">
+            <h3>Profesor</h3>
+            <div class="col-md-12">
+                <img src="tino.jpg" alt="Profesor" class="circle-img-master">
+                <p>Florentino Luis Lopez
+                </p>
+                <p>Profesor de submodulo: Emplea Frameworks para el desarrollo de software</p> <!-- Nombre del profesor -->
+            </div>
+        </div>
+
+        <!-- Sección de Integrantes -->
+        <h3 class="text-center mb-4">Integrantes del Proyecto</h3>
+        <div class="row text-center">
+            <!-- Integrante 1 -->
+            <div class="col-md-2 mb-4">
+                <img src="yotodoguapo.jpg" alt="Integrante 1" class="circle-img">
+                <p>Aldo Vasquez Ruiz</p>
+            </div>
+            <!-- Integrante 2 -->
+            <div class="col-md-2 mb-4">
+                <img src="foto.png" alt="Integrante 2" class="circle-img">
+                <p>Alan Lopez Garcia</p>
+            </div>
+            <!-- Integrante 3 -->
+            <div class="col-md-2 mb-4">
+                <img src="foto.png" alt="Integrante 3" class="circle-img">
+                <p>Haniel Misael Cruz Gutierrez</p>
+            </div>
+            <!-- Integrante 4 -->
+            <div class="col-md-2 mb-4">
+                <img src="foto.png" alt="Integrante 4" class="circle-img">
+                <p>Daniel Alexander Ramirez Jimenez</p>
+            </div>
+            <!-- Integrante 5 -->
+            <div class="col-md-2 mb-4">
+                <img src="foto.png" alt="Integrante 5" class="circle-img">
+                <p>Jorge Abel Montero Martinez </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="comentarios" class="section-content">
+    <div class="container">
+        <h2 class="section-header">Comentarios</h2>
+        
+        <!-- Formulario para agregar comentarios -->
+        <form id="form-comentarios" action="guardar_comentario.php" method="POST">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="comentario" class="form-label">Comentario:</label>
+                <textarea class="form-control" id="comentario" name="comentario" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Comentario</button>
+        </form>
+
+        <!-- Sección para mostrar comentarios -->
+        <div id="lista-comentarios" class="mt-4">
+        <?php include 'mostrar_comentarios.php'; ?>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Sección de Agradecimientos -->
+    <section id="agradecimientos" class="section-content d-none">
+        <div class="container">
+            <h2 class="section-header">Agradecimientos</h2>
+            <p>Queremos expresar nuestro agradecimiento a todos los que han colaborado para la realización de este proyecto.
+                Igual a agradecer a nuestro querido profesor Florentino Luis Lopez por enseñarnos el uso de HTML, CSS Y JAVASCRIPT, ya <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <title>Título de la página</title>
+                </head>
+                <body>
+                    que
+                </body>
+                </html> sin su ayuda esto no pudo haber sido posible
+            </p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<mysql src="mysql"></mysql>
+<php src="guardar_comentario.php"></php>
+<php src="mostrar_comentarios.php"></php>
+</html>
